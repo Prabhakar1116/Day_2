@@ -1,0 +1,45 @@
+Document Object & Window Object
+
+1.Document  Object:
+
+- A document object represents the content of a web page, such as text, images and other media. It is created by the browser when it reads HTML file of the web page.
+- The document object represents the entire web page that is being viewed in a browser. eg HTML,CSS,JS
+- It contains all elements of an HTML page like head, body etc.
+- Every web page has one and only one document object.
+
+
+2.Window Object:
+
+- A window object is associated with each tab or window in a browser.
+- Each JavaScript program runs within the context of Window Object.
+- It provides access to properties and methods related to the webpage and user interface.
+- There can be multiple windows (tabs) open at once in a browser.
+
+
+3.Relationship & Difference between Document and Window objects:
+
+Relationship
+
+- The document object is embedded within the window object, serving as a child entity within the broader context of the window.
+- Document object represents the content of a web page while the Window object represents the actual browser window.
+- In JavaScript, you can use "document" keyword to refer to the current document inside any function or method that is associated with the Document object.
+- Window object controls browser-related functionalities like resizing, navigation, and event handling.
+- Methods available in both Document and  Window objects are called Methods while those specific to either Document or Window objects are referred as Properties.
+
+
+Difference
+
+Document Object
+
+- Document object does not have any knowledge about its environment; it cannot interact directly with the browser.
+- Document object doesn’t know anything about the browser it's running on.
+- It only knows about its own data model i.e., DOM(Document Object Model).
+- It interacts with other documents through links/frames.
+
+Window Object
+
+- Window object knows everything about itself and the browser it's running on.
+- It provides information about screen size, scroll position, cookies, location, etc.
+- It also provides functionality for these aspects like alert(), prompt() etc.
+- We may need to use `window` keyword while accessing properties/methods of the Window object
+
